@@ -70,7 +70,7 @@ class Timing
                 $time .= ", $secs secs";
             }
         } else if ($time > 1000) {
-            $time = round(($time / 1000), 2).' secs';
+            $time = round(((int) $time / 1000), 2).' secs';
         } else {
             $time = round($time).'ms';
         }
